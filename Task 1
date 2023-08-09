@@ -1,1 +1,0 @@
-SELECT d.NAME AS DEPT_NAME, AVG(s.AMT) AS AVG_MONTHLY_SALARY_USD FROM Salaries s JOIN Employees e ON e.id = s.EMP_ID JOIN Departments d ON d.ID = e.DEPT_ID GROUP BY d.NAME -- Group the results by department name ORDER BY AVG(s.AMT) DESC -- Sort the average salary in descending order LIMIT 3; -- Limit the output to the top 3 departments with the highest average salary
